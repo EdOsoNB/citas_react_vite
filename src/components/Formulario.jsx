@@ -61,7 +61,7 @@ const Formulario = ({pacientes, setPacientes, paciente, setPaciente}) => {
       objetoPaciente.id = paciente.id
       const pacientesActualizados = pacientes.map( pacienteState => pacienteState.id === paciente.id ? objetoPaciente : pacienteState)
       setPacientes(pacientesActualizados)
-      setPaciente({})
+      setPaciente()
 
     } else {
       // Nuevo registro
